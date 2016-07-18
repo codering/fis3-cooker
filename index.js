@@ -88,7 +88,7 @@ fis.match('/node_modules/**.js', {
 fis.match('::package', {
   spriter: fis.plugin('csssprites'),
   postpackager: fis.plugin('loader', {
-      //useInlineMap: true
+      useInlineMap: true
       //allInOne: true,
   })
 });
