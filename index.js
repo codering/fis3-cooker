@@ -94,16 +94,15 @@ fis.match('::package', {
 });
 
 // ======= 在 prod 环境下，开启各种压缩和打包 =============
-
 fis.media('prod')
   .match('*.{js, css, less, sass, scss}', { // 所有js, css 加 hash
-      useHash: true
-  })
-  .match('image', {  // 所有图片加 hash
     useHash: true
   })
-  .match('*.js', {
-  optimizer: fis.plugin('uglify-js')
+  .match('::image', {  // 所有图片加 hash
+    useHash: true
+  })
+  .match('*.{js,jsx}', {
+   optimizer: fis.plugin('uglify-js')
   })
   .match('*.{css, less, sass, scss}', {
     optimizer: fis.plugin('clean-css')

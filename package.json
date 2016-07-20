@@ -1,6 +1,6 @@
 {
   "name": "fecooker",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "FE Cooker base on FIS3",
   "homepage": "https://github.com/codering/fecooker",
   "bin": {
