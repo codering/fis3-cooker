@@ -84,9 +84,9 @@ fis.match('/node_modules/**.js', {
     packTo: '/static/pkg/vendor.js'
 })
 
-// 雪碧图, 用 loader 来自动引入资源。
+//  用 loader 来自动引入资源。
 fis.match('::package', {
-  spriter: fis.plugin('csssprites'),
+  // spriter: fis.plugin('csssprites'),  // 雪碧图
   postpackager: fis.plugin('loader', {
       useInlineMap: true
       //allInOne: true,
