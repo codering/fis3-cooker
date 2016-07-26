@@ -1,6 +1,6 @@
 {
   "name": "fecooker",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "FE Cooker base on FIS3",
   "homepage": "https://github.com/codering/fecooker",
   "bin": {
@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "fis-parser-babel-5.x": "1.4.0",
-    "fis-parser-less-2.x": "0.1.4",
+    "cooker-parser-less": "0.0.1",
     "fis-postprocessor-autoprefixer": "0.0.5",
     "fis3": "3.4.17",
     "fis3-deploy-http-push": "1.1.0",

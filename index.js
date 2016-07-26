@@ -44,7 +44,7 @@ fis.match('/src/index.html', {
 
 // less编译
 fis.match('*.less', {
-  parser: fis.plugin('less-2.x'),
+  parser: fis.plugin('less'),
   rExt: '.css'
 });
 
