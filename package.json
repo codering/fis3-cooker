@@ -1,12 +1,12 @@
 {
   "name": "fis3-cooker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "FE cooker base on FIS3",
-  "homepage": "https://github.com/codering/fecooker",
+  "homepage": "https://github.com/codering/fis3-cooker",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/codering/fecooker.git"
+    "url": "https://github.com/codering/fis3-cooker.git"
   },
   "keywords": [
     "fis3",
@@ -17,7 +17,7 @@
   "author": "sloth",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/codering/fecooker/issues"
+    "url": "https://github.com/codering/fis3-cooker/issues"
   },
   "dependencies": {
     "babel-plugin-add-module-exports": "~0.2.1",
