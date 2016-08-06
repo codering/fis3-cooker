@@ -37,7 +37,7 @@ module.exports = function(){
    }
    var content = [
        ' ',
-       '   v' + fis.cli.info.version
+       '   cooker v' + fis.cli.info.version + '    fis3 v' + fis.cli.info['_fis3version']
      ].join('\n')
       
     console.log(content + "\n" + logo)
