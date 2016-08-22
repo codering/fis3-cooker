@@ -32,7 +32,7 @@ var exports = module.exports = function(fis) {
   fis.set('__transform-runtime-modules__', getTransformRuntimeModules())
 
   // 按需编译
-  fis.set('project.files', ['/src/index.html', 'map.json','/mock/**']);
+  fis.set('project.files', ['/src/*.html', 'map.json','/mock/**']);
   // 设置忽略的目录
   fis.get('project.ignore').push('/prod/**');
   fis.get('project.ignore').push('/dist/**');
@@ -61,8 +61,8 @@ var exports = module.exports = function(fis) {
   })
 
   // index.html设置
-  fis.match('/src/index.html', {
-      parser: false,
+  fis.match('/src/*.html', {
+      //parser: false,
       useCache: false
   })
   
