@@ -39,7 +39,7 @@ var exports = module.exports = function(fis) {
 
   //fis3-hook-commonjs, // 模块化支持 commonjs 规范，适应 mod.js
   fis.hook('commonjs', {
-    baseUrl: './src/modules',
+    baseUrl: './src/module',
     extList: ['.js', '.jsx']
   });
 
@@ -67,7 +67,7 @@ var exports = module.exports = function(fis) {
   })
   
   // 用babel编译
-  fis.match('{*.jsx,{/${__transform-runtime-modules__},/src/modules}/**.js}', {
+  fis.match('{*.jsx,{/${__transform-runtime-modules__},/src/module}/**.js}', {
     rExt: 'js',
     parser: [fis.plugin('babel',{
       presets: ["es2015-ie","react","stage-0"],
@@ -75,6 +75,7 @@ var exports = module.exports = function(fis) {
         "add-module-exports",
         "transform-decorators-legacy", 
         "transform-runtime",
+        ["react-intl",{"messagesDir": "./i18n-messages"}],
         ["antd"]
       ]
     })],
@@ -82,7 +83,7 @@ var exports = module.exports = function(fis) {
   });
 
   // 模块化 js
-  fis.match('/{node_modules,src/modules}/**.{js,jsx}', {
+  fis.match('/{node_modules,src/module}/**.{js,jsx}', {
     isMod: true
   });
 
