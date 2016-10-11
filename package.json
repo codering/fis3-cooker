@@ -10,9 +10,10 @@
   },
   "keywords": [
     "fis3",
-    "cooker",
+    "fis3-cooker",
     "es6",
-    "babel"
+    "babel",
+    "react"
   ],
   "author": "sloth",
   "license": "MIT",
@@ -40,7 +41,8 @@
     "fis3-postpackager-loader": "~2.0.5",
     "fis3-preprocessor-autoprefixer": "~0.1.0",
     "fis3-preprocessor-js-require-css": "~0.1.0",
-    "fis3-preprocessor-js-require-file": "~0.1.0"
+    "fis3-preprocessor-js-require-file": "~0.1.0",
+    "jsx-control-statements": "~3.1.5"
   },
   "devDependencies": {},
   "scripts": {}

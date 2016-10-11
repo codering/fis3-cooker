@@ -76,7 +76,8 @@ var exports = module.exports = function(fis) {
         "transform-decorators-legacy", 
         "transform-runtime",
         ["react-intl",{"messagesDir": "./i18n-messages"}],
-        ["import",[{libraryName: "antd"},{libraryName: "lib-ibos"}]]
+        ["import",[{libraryName: "antd"},{libraryName: "lib-ibos"}]],
+        "jsx-control-statements"
       ]
     })],
     postprocessor: fis.plugin("es3ify") 
