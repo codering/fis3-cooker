@@ -1,6 +1,6 @@
 {
   "name": "fis3-cooker",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "FE cooker base on FIS3",
   "homepage": "https://github.com/codering/fis3-cooker",
   "main": "index.js",
